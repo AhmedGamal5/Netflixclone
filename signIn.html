@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images\nficon2016.ico" type="image/x-icon" />
+    <title>Sign In</title>
+    <!-- mdb -->
+    <link rel="stylesheet" href="mdb\bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css\all.min.css" />
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="css\style.css" /> -->
+    <link rel="stylesheet" href="css\signin.css" />
+</head>
+
+<body>
+    <!-- NavBar  -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html">
+                <img src="images\Logonetflix.png" alt="logo" class="navbarimg" />
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Section  -->
+    <section class="mainsection">
+        <div class="maindiv">
+            <form method="post" action="main.html" onkeydown="valid();" autocomplete="off">
+                <h3>Sign In</h3>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <p id="emailError"></p>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <p id="passwordError"></p>
+                
+                <button type="submit" id="submitBtn"><a href="index.html" class="btnamaindev">Sign Up</a></button>
+                <div class="d-flex justify-content-between signup">
+                    <div>
+                        <input type="checkbox" name="Rememberme" id="">
+                        <label>Remember me</label>
+                    </div>
+                    <a href="#">Need Help ?</a>
+                </div>
+                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                    <a href="#!" class="text-white loginface2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#!" class="text-white loginface2"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                    <a href="#!" class="text-white loginface2"><i class="fab fa-google fa-lg"></i></a>
+                </div>
+                <div class="signupl">
+                    <p>New to Netflix?</p> <a href="index.html">Sign up now.</a>
+                </div>
+
+                <p class="learn">This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#">Learn
+                        more.</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- final section -->
+    <section class="finalsecall">
+        <footer class="finalsec container">
+          <div class="row">
+            <a href="#" class="contactus">Questions? Contact us.</a>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <ul style="list-style-type: none">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Cookie Preferences</a></li>                
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <ul style="list-style-type: none">
+                <li></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Corporate Information</a></li>               
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <ul style="list-style-type: none">
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Terms of Use</a></li>                    
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <ul style="list-style-type: none">
+                <li></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Media Center</a></li>               
+              </ul>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-globe"></i>
+              <select name="language" class="finalsec-select">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+              </select>
+            </div>
+            <p>Netflix Egypt</p>
+          </div>
+        </footer>
+      </section>
+      
+
+
+
+
+
+    <script src="mdb\popper.min.js"></script>
+    <script src="mdb\bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
